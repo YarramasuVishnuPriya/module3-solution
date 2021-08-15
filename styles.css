@@ -1,0 +1,144 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  color: black;
+  background-color: white;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+header{
+  width: 100vw;
+}
+#header-nav {
+  position: relative;
+  background-color: grey;
+  border-radius: 0;
+  border: 2px solid black;
+  width: 100vw;
+  height: auto;
+
+}
+h2{
+  font-weight: bold;
+  font-family: Comic Sans MS;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family:Comic Sans MS, serif;
+  color: black;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  text-decoration: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list {
+  color: #951C49;
+  text-align: center;
+}
+#nav-list:hover {
+  background: #E7E7E7;
+}
+#nav-list span {
+  font-size: 1.8em;
+}
+
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid black;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.navbar-header button.navbar-toggle:hover, .navbar-header button.navbar-toggle:hover {
+ color: white;
+ background-color: black;
+}
+/* END HEADER */
+
+section{
+  border: 2px solid white;
+  height: 1000px;
+  width: 100%;
+  background-color: grey;
+  margin-top: 15px;
+  margin-left: 4.15%;
+  margin-right: 4.15%;
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  #collapsable-nav  {
+    font-size: 1em;
+    margin-right: 5px;
+    width: 100vw;
+
+  }
+  ul{
+    list-style-type: none;
+    margin-left: -30px;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+  #collapsable-nav a:hover{
+ text-decoration: none;
+  }
+  #collapsable-nav span{
+    color: black;
+    text-transform: capitalize;
+  }
+  #collapsable-nav li{
+    background-color: white;
+    border: 1px solid black;
+   
+  }
+
+  /* End Header */
+
+}
+
